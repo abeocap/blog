@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<section class="post">
+  <h2>{{ page.title }}</h2>
+  <h4><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %Y" }}</time></h4>
+  {{ content }}
+</section>
+
+
