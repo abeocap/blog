@@ -35,6 +35,10 @@ h3 {
 }
 
 h4 {
+
+}
+
+h5 {
 	color: $gray;
 }
 
@@ -124,6 +128,7 @@ blockquote {
 
 	ul {
 		list-style:none;
+		margin: 0.5rem 0;
 	}
 
 	li {
@@ -160,6 +165,7 @@ blockquote {
 		//list-style:none;
 		padding-left: 1rem;
 		//margin-bottom: 0.5rem;
+		margin: 0.5rem 0;
 		li {
 			p {
 
