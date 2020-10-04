@@ -25,7 +25,7 @@ Perpetuals Beta will remain available to anyone who already has access, although
 
 Sunsetting Perpetuals allows us to focus fully on Synthetics. Our goal for Synthetics is to create indestructible trading infrastructure that people can rely on forever. To get there, we need to remove the largest point of failure from the system: our team. That means developing an open protocol with community governance.
 
-We already have a first version of Synthetics deployed on testnet that lets you buy and sell AAPL tokens with DAI. While incredible exciting, it is not enough. Several elements of the system can still be censored: our domain name (cap.finance) and the oracle server that is providing price feeds for synthetic assets (it is centralized).
+We already have a first version of Synthetics deployed on testnet that lets you buy and sell AAPL tokens with DAI. While incredibly exciting, it is not enough. Several elements of the system can still be censored: our domain name (cap.finance) and the oracle server that is providing price feeds for synthetic assets (it is centralized).
 
 We've recently settled on a system design that mitigates these weak links, effectively resulting in an open, unstoppable synthetic trading protocol.
 
