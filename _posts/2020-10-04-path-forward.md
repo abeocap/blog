@@ -7,7 +7,7 @@ This post lays out the path forward for Cap. We decided on the following after m
 
 ### CAP Token Burn
 
-First we'd like to announce that we will be minting and burning 9.9 million CAP tokens at some point this week. This will reduce the total CAP supply to 100K which will be the final number.
+First we'd like to announce that we will be minting and burning 9.9 million CAP tokens. This will reduce the total CAP supply to 100K which will be the final number.
 
 No CAP tokens will be allocated to the team. We believe the team is a weak link in a system whose goal is to live forever — more on that below.
 
