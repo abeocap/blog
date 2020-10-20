@@ -11,7 +11,7 @@ Cap has been fully deployed on Ropsten. To interact with the governance contract
 
 You'll need to connect your Ethereum web wallet (e.g. Metamask) and get some ETH and CAP on Ropsten:
 
-* ETH: [https://faucet.metamask.io/](https://faucet.metamask.io/). You'll need these to fund transactions with gas.
+* ETH: [Faucet](https://faucet.metamask.io/). You'll need these to fund transactions with gas.
 * CAP: Use the [Faucet Request](https://ropsten.etherscan.io/address/0x755d13Fd88B238fC6F585a67c54aDbd88133bb5C#writeProxyContract) method. You'll need these to cast votes on proposals.
 
 ### Submit a proposal
@@ -20,19 +20,21 @@ The easiest way to submit a new proposal is to use the scripts in the governance
 
 Start by cloning the repo:
 
-`git clone git@github.com:capfina/governance.git`
+```
+git clone git@github.com:capfina/governance.git
+```
 
-then
+then:
 
 ```
 # make sure you're using node 12
 nvm use
 
 # npm install
-npm i
+npm ci
 ```
 
-You're now ready to submit a new proposal, formatted as a JSON file:
+You're now ready to submit a new proposal. Proposals have the following format (JSON):
 
 ```
 {
@@ -48,7 +50,7 @@ In this example, we'll submit a proposal to register two new assets on Cap: TSLA
 ```
 {
   title: 'Register Asset',
-  description: 'registers asset',
+  description: 'registers TSLA and NFLX',
   discoverabilityPeriod: '1',
   transactions: [
     {
@@ -77,29 +79,41 @@ In this example, we'll submit a proposal to register two new assets on Cap: TSLA
 }
 ```
 
-Save the above into a .json file. Then run
+Save the above into a .json file.
 
-`./scripts/submit-proposal.js <path_to_json_proposal_file>`
+### Stake your CAP
+
+To submit a proposal, you need to have at least 10 CAP staked.
+
+The first step is to approve the governance contract to spend your CAP. Go to CAP's [Etherscan page](https://ropsten.etherscan.io/address/0x755d13Fd88B238fC6F585a67c54aDbd88133bb5C#writeProxyContract) and use the `approve` method with `spender` set to `0x5a037422532492e8a69b5afbffc21c68a9c4031e` (the governance contract) and `amount` equal to at least 10000000000000000000 (10 CAP in wei). 
+
+Once approved, stake your CAP using the `stakeToVote` method on [Etherscan](https://ropsten.etherscan.io/address/0x5a037422532492e8a69b5afbffc21c68a9c4031e#writeProxyContract).
+
+Then run:
+
+```
+./scripts/submit-proposal.js <path_to_json_proposal_file>
+```
 
 Your proposal has now been submitted! People will soon be able to vote on it.
 
 ### Vote
 
-To vote on a proposal, go to the governance contract's [Etherscan page](https://ropsten.etherscan.io/address/0x5a037422532492e8a69b5afbffc21c68a9c4031e#writeProxyContract).
+To vote on a proposal, use [Etherscan](https://ropsten.etherscan.io/address/0x5a037422532492e8a69b5afbffc21c68a9c4031e#writeProxyContract).
 
-If you haven't yet staked your CAP, use the stakeToVote method to do so. Staked CAP are locked during voting, and will remain so until you call the releaseStaked method.
+Make sure you have CAP staked in the governance contract.
 
-Once your CAP have been staked, use the castVote method with the proposalId you're voting on (this is provided when you submit the proposal) along with your support, which should be `true` (for) or `false` (against).
+Then use the `castVote` method with the `proposalId` you're voting on (this is provided when you submit the proposal) along with your support, which should be `true` (for) or `false` (against).
 
 Your vote is now counted!
 
-Once the voting period is over, the proposal is either cancelled (if not enough people support it) or becomes executable.
+Once the voting period is over, if your proposal receives more against votes than for votes, it is cancelled. Otherwise, it becomes executable.
 
 ### Executing a proposal
 
 A proposal that receives more for votes than against votes, and a total of more than 4,000 votes, becomes executable.
 
-Anyone can execute it by using the executeProposal method on the [governance contract](https://ropsten.etherscan.io/address/0x5a037422532492e8a69b5afbffc21c68a9c4031e#writeProxyContract). Enter 0 as payableAmount and the proposalId.
+Anyone can execute it by using the `executeProposal` method on the governance contract's [Etherscan page](https://ropsten.etherscan.io/address/0x5a037422532492e8a69b5afbffc21c68a9c4031e#writeProxyContract). Enter the `proposalId` (for `payableAmount`, enter 0).
 
 That's it! Your proposed changes are now active in the system.
 
