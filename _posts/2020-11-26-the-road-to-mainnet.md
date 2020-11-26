@@ -15,7 +15,7 @@ We deployed a proof of concept UI to interact with Cap's new Ropsten contracts a
 
 Start by connecting your Metamask wallet. Make sure Ropsten is selected as the network to use.
 
-If you don't have any Ropsten ETH yet, get some here](https://faucet.dimensions.network/) or [here](https://faucet.metamask.io/). You'll need these to pay for gas.
+If you don't have any Ropsten ETH yet, get some [here](https://faucet.dimensions.network/) or [here](https://faucet.metamask.io/). You'll need these to pay for gas.
 
 Click on faucet in the UI to request some testnet DAI. Make sure to refresh your page after the faucet transaction is confirmed (this will be automated in later client updates). You should see 10000 DAI in your balance.
 
