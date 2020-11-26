@@ -72,6 +72,12 @@ CAP benefits from continuous upward pressure in price thanks to a buyback progra
 
 buyBackAndBurn() is a CLP contract method that can be called by anyone at any time. It will automatically determine the amount of CAP to buy based on the last time it was called and the funds currently available in the CLP.
 
+### Mainnet in sight
+
+Over the next few weeks, we, along with the Cap community, will be using, testing, and improving Cap's trading system. Securing the contracts and improving the client UI experience are high priorities.
+
+We hope to reach a high enough system fidelity level sometime in December, which would enable mainnet deployment.
+
 ### Feedback
 
 Questions or feedback? Let us know on [Telegram](https://t.me/capfin).
