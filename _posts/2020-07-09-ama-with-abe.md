@@ -3,6 +3,10 @@ layout: post
 title: AMA with Abe
 ---
 
+This post may be obsolete. Please check the latest blog post or our [Telegram](https://t.me/capfin).
+
+---
+
 AMA with [Cap](https://cap.finance) co-founder Abe Osten. Questions and answers collected from [Telegram](https://t.me/capfin) conversations.
 
 ### What's Cap? <a name="a" href='#a' class='permalink'><img src='/assets/images/chain.svg'></a>

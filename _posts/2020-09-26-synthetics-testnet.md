@@ -3,6 +3,10 @@ layout: post
 title: Synthetics Testnet
 ---
 
+This post may be obsolete. Please check the latest blog post or our [Telegram](https://t.me/capfin).
+
+---
+
 Today we're launching [Cap Synthetics](https://synthetics.cap.finance) on the Ropsten testnet.
 
 Synthetics lets you buy and sell assets, like stocks, using stablecoins. We're launching with DAI as the stablecoin and AAPL as the asset.

@@ -3,6 +3,10 @@ layout: post
 title: The Path Forward
 ---
 
+This post may be obsolete. Please check the latest blog post or our [Telegram](https://t.me/capfin).
+
+---
+
 This post lays out the path forward for Cap. We decided on the following after much thought on system dynamics, incentives, and legal implications. We believe we've reached a system design that is robust, reliable, and timeless, as described below.
 
 ### CAP Token Burn

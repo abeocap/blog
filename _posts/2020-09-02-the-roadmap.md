@@ -3,6 +3,10 @@ layout: post
 title: The Roadmap
 ---
 
+This post may be obsolete. Please check the latest blog post or our [Telegram](https://t.me/capfin).
+
+---
+
 This post lays out a 10 year roadmap for Cap. Our goal is to build open, decentralized financial services with CAP as the native token.
 
 We consider this to be such an important mission because of its huge disruptive potential. For the first time in history, we have the opportunity to build unstoppable financial services governed by fair and open rules, as opposed to the current centralized and opaque financial system that underpins almost every aspect of our society.

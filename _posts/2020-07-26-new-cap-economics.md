@@ -3,6 +3,10 @@ layout: post
 title: New CAP Economics
 ---
 
+This post may be obsolete. Please check the latest blog post or our [Telegram](https://t.me/capfin).
+
+---
+
 A new token economic model for Cap is proposed below. It is based on [Telegram](https://t.me/capfin) conversations among community members.
 
 ### Summary
